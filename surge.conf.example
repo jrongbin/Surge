@@ -1,0 +1,38 @@
+[General]
+ipv6 = false
+loglevel = notify
+skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local
+dns-server = system, 182.254.116.116, 119.29.29.29, 208.67.222.222:443
+external-controller-access = helloWorld@127.0.0.1:6170
+
+# For iOS
+bypass-system = true
+
+# For macOS
+interface = 0.0.0.0
+socks-interface = 0.0.0.0
+enhanced-mode-by-rule = true
+
+[Proxy Group]
+Proxy = select, DIRECT, G-hk, G-jp, G-other
+nProxy = select, DIRECT, G-cn, G-hk, G-jp, G-other
+
+G-cn = select, DIRECT, policy-path=https://secret/path/to/proxy-cn.list
+G-hk = select, policy-path=https://secret/path/to/proxy-hk.list
+G-jp = select, policy-path=https://secret/path/to/proxy-jp.list
+G-other = select, policy-path=https://secret/path/to/proxy-other.list
+
+S-apple = select, DIRECT, G-cn, G-hk, G-jp, G-other
+S-test = select, DIRECT, G-cn, G-hk, G-jp, G-other
+
+[Rule]
+RULE-SET,SYSTEM,DIRECT
+RULE-SET,https://raw.githubusercontent.com/jrongbin/surge/master/rule-global.list,S-test
+RULE-SET,https://raw.githubusercontent.com/jrongbin/surge/master/rule-apple.list,S-apple
+RULE-SET,https://raw.githubusercontent.com/jrongbin/surge/master/rule-nproxy.list,nProxy
+RULE-SET,https://raw.githubusercontent.com/jrongbin/surge/master/rule-telegram.list,Proxy
+RULE-SET,https://raw.githubusercontent.com/jrongbin/surge/master/rule-proxy.list,Proxy
+RULE-SET,LAN,DIRECT
+
+GEOIP,CN,nProxy
+FINAL,Proxy,enhanced-mode,dns-failed

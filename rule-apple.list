@@ -1,0 +1,13 @@
+DOMAIN-SUFFIX,cdn-apple.com,enhanced-mode
+DOMAIN-SUFFIX,mzstatic.com,enhanced-mode // App Store & iTunes Images
+DOMAIN-SUFFIX,aaplimg.com,enhanced-mode
+DOMAIN-SUFFIX,apple.co,enhanced-mode
+DOMAIN-SUFFIX,apple.com,enhanced-mode
+DOMAIN-SUFFIX,icloud-content.com,enhanced-mode
+DOMAIN-SUFFIX,icloud.com,enhanced-mode
+DOMAIN-SUFFIX,itunes.com,enhanced-mode
+DOMAIN-SUFFIX,itunes.apple.com,enhanced-mode
+DOMAIN-SUFFIX,lookup-api.apple.com,enhanced-mode // Dictionary
+DOMAIN-SUFFIX,me.com,enhanced-mode
+PROCESS-NAME,storedownloadd,enhanced-mode // Mac App Store
+USER-AGENT,com.apple.appstored*,enhanced-mode // iOS App Store

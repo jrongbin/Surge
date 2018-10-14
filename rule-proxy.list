@@ -1,0 +1,33 @@
+PROCESS-NAME,Spotify
+PROCESS-NAME,Telegram
+PROCESS-NAME,Tweetbot
+PROCESS-NAME,Dropbox
+
+# Microsoft
+DOMAIN-SUFFIX,live.com,enhanced-mode
+DOMAIN-SUFFIX,microsoft.com,enhanced-mode
+DOMAIN-SUFFIX,msftconnecttest.com,enhanced-mode
+DOMAIN-SUFFIX,windows.net,enhanced-mode
+DOMAIN-SUFFIX,windowsupdate.com,enhanced-mode
+
+# Amazon
+DOMAIN-SUFFIX,amazonaws.com,enhanced-mode
+
+DOMAIN-SUFFIX,appspot.com,enhanced-mode
+DOMAIN-SUFFIX,cdninstagram.com,enhanced-mode
+DOMAIN-SUFFIX,facebook.com,enhanced-mode
+DOMAIN-SUFFIX,fb.com,enhanced-mode
+DOMAIN-SUFFIX,fb.me,enhanced-mode
+DOMAIN-SUFFIX,fbcdn.net,enhanced-mode
+DOMAIN-SUFFIX,gmail.com,enhanced-mode
+DOMAIN-SUFFIX,instagram.com,enhanced-mode
+DOMAIN-SUFFIX,scdn.co,enhanced-mode
+DOMAIN-SUFFIX,t.co,enhanced-mode
+DOMAIN-SUFFIX,twimg.com,enhanced-mode
+DOMAIN-SUFFIX,twitpic.com,enhanced-mode
+DOMAIN-SUFFIX,twitter.com,enhanced-mode
+DOMAIN-SUFFIX,youtube.com,enhanced-mode
+
+DOMAIN-KEYWORD,google,enhanced-mode
+
+DOMAIN-KEYWORD,v2ex,enhanced-mode
